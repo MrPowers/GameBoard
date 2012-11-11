@@ -1,5 +1,7 @@
 ## GameBoard
 
+Authors: [MrPowers](https://github.com/MrPowers), [sandbochs](https://github.com/sandbochs)
+
 This class helps calculate the rows, columns, diagonals, and diagonals of a coordinate for nested array data structures.  It is useful for games like Tic-Tac-Toe, Connect Four, Battleship, etc.
 
 ## Getting Started
