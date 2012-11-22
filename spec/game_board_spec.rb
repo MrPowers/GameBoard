@@ -54,9 +54,21 @@ describe GameBoard do
 
   context '#diagonals' do
     it 'calculates all diagonals' do 
-      board.diagonals ===  [[10], [7, 11], [4, 8, 12], [1, 5, 9], [2, 6], [3], 
+      #p board.diagonals
+      #p [[10], [7, 11], [4, 8, 12], [1, 5, 9], [2, 6], [3], [1], [4, 2], [7, 5, 3], [10, 8, 6], [11, 9], [12]]
+      board.diagonals ==  [[10], [7, 11], [4, 8, 12], [1, 5, 9], [2, 6], [3], 
                   [1], [4, 2], [7, 5, 3], [10, 8, 6], [11, 9], [12]]
     end
-  end
 
+    board2 = GameBoard.new(2, 4)
+    board2.set_grid([[1, 2, 3, 4], 
+                     [5, 6, 7, 8]])
+    
+    it "calculates all diagonals" do
+      # p board2.diagonals
+      # p [[5], [1, 6], [2, 7], [3, 8], [4], [1], [5, 2], [6, 3], [7, 4], [8]]  
+      board2.diagonals ==  [[5], [1, 6], [2, 7], [3, 8], [4], 
+                            [1], [5, 2], [6, 3], [7, 4], [8]]  
+    end
+  end
 end

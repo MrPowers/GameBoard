@@ -74,8 +74,8 @@ class GameBoard
   end
 
   def down_right_diagonals(grid_array)
-    number_of_rows.times.map { |row_index| down_right_diagonal(row_index, 0, grid_array) } +
-    number_of_columns.times.map { |column_index| down_right_diagonal(1, column_index, grid_array)}
+    number_of_rows.times.map { |row_index| down_right_diagonal(row_index, 0, grid_array) }.reverse +
+    (1..number_of_columns - 1).map { |column_index| down_right_diagonal(0, column_index, grid_array)}
   end
 
   def grid_reflected_about_y_axis
@@ -85,5 +85,4 @@ class GameBoard
   def grid_reflected_about_x_axis
     grid.reverse
   end
-
 end
