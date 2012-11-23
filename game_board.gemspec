@@ -6,7 +6,7 @@ Gem::Specification.new do |gem|
   gem.email         = ["matthewkevinpowers@gmail.com", "elliot@sandbochs.com"]
   gem.description   = %q{This is a GameBoard class with methods to help analyze the grid.}
   gem.summary       = %q{A class to represent game boards}
-  gem.homepage      = "https://github.com/MrPowers/board_gem"
+  gem.homepage      = "https://github.com/MrPowers/GameBoard"
 
   gem.files         = `git ls-files`.split($\)
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})

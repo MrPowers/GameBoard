@@ -62,3 +62,10 @@ Get all rows or columns:
 board.rows
 board.columns
 ```
+
+Print the board to console:
+
+```ruby
+# Returns a string: "[1, 2, 3]\n[4, 5, 6]\n[7, 8, 9]\n[10, 11, 12]"
+puts board.to_s
+```

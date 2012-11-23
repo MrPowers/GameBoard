@@ -93,4 +93,12 @@ describe GameBoard do
 
   end
 
+  context '#to_s' do
+
+    it "prints the board properly" do
+      board.to_s.should eq "[1, 2, 3]\n[4, 5, 6]\n[7, 8, 9]\n[10, 11, 12]"
+    end
+
+  end
+
 end
